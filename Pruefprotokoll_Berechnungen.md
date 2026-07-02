@@ -92,24 +92,24 @@ Da alle Use Cases nun dieselben globalen Kunden-Defaults teilen, hängen die Erg
 
 | UC | Modul | Klasse | Volume | Dunkel% | FTE | €/Buchung | SLA% | Payback | Status |
 |----|-------|--------|-------:|--------:|----:|----------:|-----:|--------:|--------|
-| UC01 | FI-AP | K2 HYBRID | 25.000 | 47,2% | 17,7 | 4,14€ | 98,5% | 1,4M | ✅ OK |
-| UC02 | FI-AR | K2 HYBRID | 25.000 | 47,2% | 17,7 | 4,14€ | 98,5% | 1,4M | ✅ OK |
-| UC03 | BC-MID | K3 AGENTIC | 25.000 | 83,5% | 32,5 | 1,45€ | 98,5% | 2,7M | ✅ OK |
-| UC04 | PM/EAM | K2 HYBRID | 25.000 | 47,2% | 17,7 | 4,14€ | 98,5% | 1,4M | ✅ OK |
-| UC05 | MM-PUR | K2 HYBRID | 25.000 | 47,2% | 17,7 | 4,14€ | 98,5% | 1,4M | ✅ OK |
-| UC06 | BC-CC | K2 HYBRID | 25.000 | 50,4% | 19,0 | 3,90€ | 98,5% | 1,3M | ✅ OK |
-| UC07 | SD-EDI | K2 HYBRID | 25.000 | 74,4% | 28,9 | 2,02€ | 98,5% | 0,9M | ✅ OK |
-| UC08 | FI-CO | K2 HYBRID | 25.000 | 50,4% | 19,0 | 3,90€ | 98,5% | 1,3M | ✅ OK |
-| UC09 | BC-ARC | K3 AGENTIC | 25.000 | 80,7% | 31,4 | 1,67€ | 98,5% | 2,8M | ✅ OK |
-| UC10 | MM-SRM | K3 AGENTIC | 25.000 | 83,5% | 32,5 | 1,45€ | 98,5% | 2,7M | ✅ OK |
-| UC11 | SD-SLS | K3 AGENTIC | 25.000 | 80,7% | 31,4 | 1,67€ | 98,5% | 2,8M | ✅ OK |
-| UC12 | CA-MDG | K3 AGENTIC | 25.000 | 83,5% | 32,5 | 1,45€ | 98,5% | 2,7M | ✅ OK |
-| UC13 | HCM | K3 AGENTIC | 25.000 | 83,5% | 32,5 | 1,45€ | 98,5% | 2,7M | ✅ OK |
-| UC14 | CRM-SRV | K2 HYBRID | 25.000 | 74,4% | 28,9 | 2,02€ | 98,5% | 0,9M | ✅ OK |
-| UC15 | FI-TR | K2 HYBRID | 25.000 | 50,4% | 19,0 | 3,90€ | 98,5% | 1,3M | ✅ OK |
+| UC01 | FI-AP | K2 HYBRID | 25.000 | 47,2% | 18,4 | 4,16€ | 98,3% | 1,5M | ✅ OK |
+| UC02 | FI-AR | K2 HYBRID | 25.000 | 62,5% | 24,4 | 2,96€ | 98,3% | 0,9M | ✅ OK |
+| UC03 | BC-MID | K2 HYBRID | 25.000 | 72,0% | 28,1 | 2,22€ | 98,3% | 0,8M | ✅ OK |
+| UC04 | PM/EAM | K2 HYBRID | 25.000 | 62,5% | 24,4 | 3,00€ | 98,3% | 0,9M | ✅ OK |
+| UC05 | MM-PUR | K3 AGENTIC | 25.000 | 76,5% | 29,9 | 1,87€ | 98,3% | 1,5M | ✅ OK |
+| UC06 | BC-CC | K3 AGENTIC | 25.000 | 71,4% | 27,9 | 2,26€ | 98,3% | 1,7M | ✅ OK |
+| UC07 | SD-EDI | K2 HYBRID | 25.000 | 73,7% | 28,8 | 2,08€ | 98,3% | 0,7M | ✅ OK |
+| UC08 | FI-CO | K3 AGENTIC | 25.000 | 73,9% | 28,9 | 2,11€ | 98,3% | 1,6M | ✅ OK |
+| UC09 | BC-ARC | K2 HYBRID | 25.000 | 75,5% | 29,5 | 2,06€ | 98,3% | 0,7M | ✅ OK |
+| UC10 | MM-SRM | K2 HYBRID | 25.000 | 41,0% | 16,0 | 4,80€ | 98,3% | 2,1M | ✅ OK |
+| UC11 | SD-SLS | K3 AGENTIC | 25.000 | 79,2% | 31,0 | 1,65€ | 98,3% | 1,4M | ✅ OK |
+| UC12 | CA-MDG | K3 AGENTIC | 25.000 | 73,9% | 28,9 | 2,08€ | 98,3% | 1,6M | ✅ OK |
+| UC13 | HCM | K2 HYBRID | 25.000 | 54,3% | 21,2 | 3,65€ | 98,3% | 1,2M | ✅ OK |
+| UC14 | CRM-SRV | K2 HYBRID | 25.000 | 64,0% | 25,0 | 2,84€ | 98,3% | 0,9M | ✅ OK |
+| UC15 | FI-TR | K2 HYBRID | 25.000 | 55,6% | 21,7 | 3,57€ | 98,3% | 1,1M | ✅ OK |
 
 > [!NOTE]
-> Durch die Shared Defaults sind alle vorherigen Anomalien (wie negative ROI-Werte bei zu geringem Volumen) vollständig behoben. Alle Use Cases weisen nun in ihren Standardwerten hochgradig rentable, plausible betriebswirtschaftliche ROI- und Payback-Zahlen auf.
+> Durch die Shared Defaults und die stochastische Zuweisung (Klasse 3 erst ab $N \ge 15$) sind alle Berechnungen schlüssig. Use Cases mit $\ge 15$ Regeln erzielen durch Klasse 3 ReAct-Schleifen eine drastische Reduktion der Fehlerrate und damit eine höhere Dunkelquote (STP), was das höhere CAPEX-Investment (160k €) schnell amortisiert.
 
 ---
 *Zertifiziert durch PBD EXPERTS SA2 Governance Framework · Plausibilitäts-Audit 2026*
