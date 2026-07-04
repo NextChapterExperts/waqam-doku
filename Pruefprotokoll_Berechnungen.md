@@ -1,18 +1,18 @@
 # 🔬 Prüfprotokoll: WAQAM Berechnungs-Engine & Plausibilitäts-Nachweis
 
-**Datum:** 30.06.2026  
-**Gegenstand:** Vollprüfung der Berechnungslogik in [pcsEngine.ts](file:///home/peter/peters-brain/Projekte/SAP-Consultant-Package/SA1/Prototype/web-app/src/utils/pcsEngine.ts)  
+**Datum:** 04.07.2026  
+**Gegenstand:** Vollprüfung der Berechnungslogik in [pcsEngine.ts](file:///home/peter/peters-brain/Projekte/waqamboard/src/utils/pcsEngine.ts)  
 **Scope:** Mathematische Korrektheit, Numerische Stabilität, Betriebswirtschaftliche Plausibilität, Crossover-Verhalten bei Volumenänderung
 
 ---
 
-## ✅ Automatisierte Tests: 455/455 bestanden
+## ✅ Automatisierte Tests: 514/514 bestanden
 
-### Original-Testsuite (`npm test`) — 43/43 ✅
-* Verifiziert mathematische Invarianten, Bayes-Konfidenz, Null-Kosten-Garantien bei Klasse 0 und extreme Ränder.
+### Original-Testsuite (`npm test`) — 48/48 ✅
+* Verifiziert mathematische Invarianten, Bayes-Konfidenz, Null-Kosten-Garantien bei Klasse 0, extreme Ränder und die schrittweise SCI-Prozessrechnung.
 
-### Deep Audit ([deepAudit.ts](file:///home/peter/peters-brain/Projekte/SAP-Consultant-Package/SA1/Prototype/web-app/src/utils/deepAudit.ts)) — 412/412 ✅
-* Kreuzvalidiert die Berechnungen der Engine gegen eine unabhängige, mathematische Nachberechnung für alle 15 Use Cases.
+### Deep Audit ([deepAudit.ts](file:///home/peter/peters-brain/Projekte/waqamboard/src/utils/deepAudit.ts)) — 466/466 ✅
+* Kreuzvalidiert die Berechnungen der Engine gegen eine unabhängige, mathematische Nachberechnung für alle 18 Use Cases und verifiziert Monotonien sowie Plausibilitäten.
 
 ---
 

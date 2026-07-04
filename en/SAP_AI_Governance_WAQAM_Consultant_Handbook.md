@@ -1,6 +1,6 @@
 # 📘 SAP AI Enterprise Governance & WAQAM Engine – Comprehensive Architect & Consultant Handbook
 
-**Version 3.5 · Status: June 2026**  
+**Version 3.5 · Status: July 2026**  
 **Publisher: PBD EXPERTS Enterprise Architecture Board**  
 **Target Audience: Senior SAP Consultants, Enterprise Architects, CFOs, IT Auditors & Certified Public Accountants**
 
@@ -65,120 +65,62 @@ The **WAQAM (Workload Architecture & Quality Assessment Model)** strictly distin
 
 ## 🖥️ 3. Detailed Application Walkthrough & UI Control Guide
 
----
-
 ### 3.1 Slide 1: Executive Briefing & Use Case Selection
-
 Slide 1 introduces the executive briefing during client workshops. Consultants align with the board on the specific SAP process to transform.
 
-![Slide 1 Executive Briefing](file:///home/peter/.gemini/antigravity/brain/614ba1d0-4656-4f4f-bfd9-3de50ec096d3/app_screenshot_slide1.png)
-
 #### 🎛️ UI Controls & Functions on Slide 1:
-1. **SAP Core Module Dropdown (Header):**
-   * *Function:* Allows switching between prepared enterprise use cases (*UC01: Vendor Invoice Matching (FI/MM)*, *UC02: Customer Sales Order Processing (SD)*, *UC03: Purchase Requisition Approval (MM/CO)*, etc.).
-   * *Impact:* Instantly loads process steps, SAP master tables, and baseline parameters specific to that core module.
-2. **Use Case Briefing Card (Left):**
-   * *Function:* Displays business process scope and primary transactional triggers.
-3. **AS-IS Baseline & Financial Risk Exposure (Right):**
-   * *Function:* Visualizes historic manual processing exposure without AI automation.
-   * *Metrics:* Shows baseline processing time per document (e.g., 12 minutes manual labor), internal hourly rate (62.50 €/hr), and historic manual error potential.
-4. **Button "Analyze Process Workflow ➔" (Bottom Right):**
-   * *Function:* Navigates directly to Slide 2. Alternatively press keyboard right arrow `➔`.
-
----
+1. **SAP Core Module Dropdown (Header):** Allows switching between prepared enterprise use cases (e.g. *UC01*, *UC02*, etc.). Instantly loads core module process steps.
+2. **Use Case Briefing Card (Left):** Displays business process scope and primary transactional triggers.
+3. **AS-IS Baseline & Financial Risk Exposure (Right):** Visualizes manual processing exposure (labor time, internal rate, and historic errors).
+4. **Button "Analyze Process Workflow ➔" (Bottom Right):** Navigates directly to Slide 2.
 
 ### 3.2 Slide 2: Visual Process Canvas & SA2 Architecture Blueprint
-
 Slide 2 presents the 5-step process workflow and demonstrates how AI components integrate into SAP Clean Core architecture.
 
-![Slide 2 Process Workflow](file:///home/peter/.gemini/antigravity/brain/614ba1d0-4656-4f4f-bfd9-3de50ec096d3/app_screenshot_slide2.png)
-
 #### 🎛️ UI Controls & Functions on Slide 2:
-1. **AS-IS Process Chain (Top Flow, 5 Cards):**
-   * *Function:* Displays traditional manual processing steps. Clicking any card highlights its specific AS-IS bottlenecks on the right panel.
-2. **TO-BE Target Architecture Canvas (Bottom Flow, 5 Cards with BTP Bridge):**
-   * *Function:* Visualizes automated target workflow leveraging SAP AI Core and the Validation Gate firewall.
-3. **Validation Gate Firewall Shield (Highlighted between Steps 2 and 3):**
-   * *Function:* Proves to auditors that AI payloads never write directly to S/4HANA tables without passing deterministic Pydantic verification.
-4. **Button "Launch Live ROI Simulator ➔" (Bottom Right):**
-   * *Function:* Navigates to Slide 3.
-
----
+1. **AS-IS Process Chain (Top Flow, 5 Cards):** Displays traditional manual processing steps. Clicking any card highlights its specific AS-IS bottlenecks on the right panel.
+2. **TO-BE Target Architecture Canvas (Bottom Flow, 5 Cards with BTP Bridge):** Visualizes automated target workflow leveraging SAP AI Core and the Validation Gate firewall.
+3. **Validation Gate Firewall Shield (Highlighted between Steps 2 and 3):** Proves to auditors that AI payloads never write directly to S/4HANA tables without passing deterministic Pydantic verification.
+4. **Button "Launch Live ROI Simulator ➔" (Bottom Right):** Navigates to Slide 3.
 
 ### 3.3 Slide 3: WAQAM Live Simulator & CFO Executive Audit
-
 Slide 3 is the core analytical engine. Consultants adjust technical and financial parameters live in front of the CFO.
 
-![Slide 3 Live Simulator](file:///home/peter/.gemini/antigravity/brain/614ba1d0-4656-4f4f-bfd9-3de50ec096d3/app_screenshot_slide3_simulator.png)
-
 #### 🎛️ UI Controls & Sliders (Left Column):
+1. **🏆 Button "Optimal Variant (Sweet Spot)":** 1-click preset applying the standard ROI Class 2 configuration.
+2. **🎯 Business Scenario Quick Switches:** One-click parameter adjustments tailored to specific client goals (Max STP, Express, High Precision).
+3. **⚙️ Button "Enforce Architecture Boundaries...":** Opens submenu to manually lock Class 0, 1, 2, or 3.
+4. **Slider "Monthly Volume (V)":** 1,000 to 100,000 documents/month.
+5. **Slider "Unstructured Ratio (U)":** 0% to 100%.
+6. **Slider "Prozess-Komplexität (N)":** 3 to 30 rules.
+7. **Slider "Ø Positions per Doc (P)":** 1 to 30 positions.
+8. **Slider "Max SLA Latency (Sec)":** 1.0s to 30.0s (Latencies ≤ 2.0s force Class 0 ABAP).
+9. **Submenu "Adjust Advanced IT Details...":** Data Quality ($Q$), Cost per Error, and Token Price.
 
-1. **🏆 Button "Optimal Variant (Enterprise Sweet Spot)":**
-   * *Function:* 1-click preset applying the maximum ROI Class 2 configuration (25,000 documents, 50% unstructured, 8.0s SLA).
-2. **🎯 Business Scenario Quick Switches (1. Max STP, 2. Express Run, 3. High Precision):**
-   * *Function:* One-click parameter adjustments tailored to specific client goals.
-3. **⚙️ Button "Enforce Architecture Boundaries...":**
-   * *Function:* Opens submenu to manually lock Class 0, Class 1, or Class 3.
-4. **🔒 Lock Banner (Architecture Locking):**
-   * *Function:* Appears when a class is locked. Shows active limits and provides an `Unlock` button to restore full manual control.
-5. **Slider "Monthly Volume (V)":**
-   * *Range:* 1,000 to 100,000 documents/month.
-   * *Impact:* Scales net financial savings and accelerates amortization.
-6. **Slider "Unstructured Ratio (U)":**
-   * *Range:* 0% to 100%. *(Dynamically constrained when smart locks are active!)*
-   * *Impact:* Determines whether ABAP (≤10%), Point-AI (≤35%), Hybrid-AI (≤59%), or Agents (≥60%) are recommended.
-7. **Slider "Max SLA Latency (Sec)":**
-   * *Range:* 1.0s to 30.0s.
-   * *Impact:* Latencies ≤ 2.0s force Class 0 (ABAP), as LLMs require 3-8s execution windows.
-8. **Submenu "Adjust Advanced IT Details...":**
-   * *Data Quality (Q):* 10% to 100%. Influences initial Bayes extraction confidence.
-   * *Cost per Error (€):* Financial exposure of uncaptured error postings.
-   * *Token Price (€ / 1M):* LLM runtime cost on SAP AI Core. Automatically disabled in Class 0 (0.00 €).
+> [!NOTE]
+> **The methodic parameter design:**
+> To ensure objective comparison, all 15 use cases share identical **Standard Client Parameters** (Defaults: 25,000 documents, 50% U, 80% Q, 8s SLA, 5 positions). The functional differentiation is **exclusively** determined by process rule complexity ($N$) and error cost.
 
 #### 📊 Result Cards (Right Column Top):
-* **Straight-Through Processing (%):** Calculated automation rate (e.g., ~85%).
-* **Real Manual Labor / Mo (€):** Remaining HITL review costs in Fiori My Inbox.
+* **Straight-Through Processing (%):** Calculated automatic processing rate.
+* **Real Manual Labor / Mo (€):** Remaining manual review costs in Fiori Inbox.
 * **LLM Token Operating Cost / Mo (€):** Pure runtime token cost on SAP AI Core.
-* **Real Total Cost / Document (€/Booking):** All-inclusive processing cost per document including labor, tokens, OPEX, and residual risk.
+* **Real Total Cost / Document (€/Booking):** All-inclusive cost per booking transaction.
 
-#### 🏢 Executive Audit Matrix (Right Column Middle):
-* *Function:* Side-by-side 4-column comparative analysis across all operating modes (Class 0, 1, 2, 3) detailing CAPEX, OPEX, and Payback period in months.
-* *Risk Traffic Light Buttons:* Interactive buttons (`🟢 GREEN`, `🟢/🟡 LOW`, `🟢 SWEET SPOT`, `🔴 HIGH`). Clicking opens the risk protocol.
-
----
+#### 🏢 Executive Audit Matrix & Risk Traffic Lights:
+* Side-by-side 4-column comparison across all operating modes (Class 0, 1, 2, 3) detailing CAPEX, OPEX, and Payback.
+* Traffic Light buttons (`🟢 GREEN`, `🟢/🟡 LOW`, `🟢 SWEET SPOT`, `🔴 HIGH`) open the risk protocol.
 
 ### 3.4 🛡️ CFO Risk & Governance Popover Modal (Interactive Traffic Lights)
-
-Clicking any traffic light button in the Audit Matrix opens the gutachterliche risk protocol modal.
-
-![CFO Risk Modal](file:///home/peter/.gemini/antigravity/brain/614ba1d0-4656-4f4f-bfd9-3de50ec096d3/app_screenshot_slide3_risk_modal.png)
-
-#### 🎛️ Modal Defense Details for Board Presentation:
-* **🟢 SWEET SPOT (Class 2 - Hybrid-AI):**  
-  Proves 0% Vendor Lock-in via SAP AI Core Multi-LLM Hub, 100% Model Drift Firewall (zero SAP ERP re-testing following LLM updates), and IDW PS 880 compliance via immutable change documents in `CDHDR`/`CDPOS`.
-* **🔴 HIGH (Class 3 - Autonomous Agent):**  
-  Warns the CFO against unpredictable OPEX (3,800 €/mo), high CAPEX (160,000 €), and auditor compliance concerns regarding GoBD due to dynamic ReAct tool-loops.
-
----
+CFO risk protocol modal content:
+* **🟢 SWEET SPOT (Class 2 - Hybrid-AI):** Proves 0% Vendor Lock-in, 100% Model Drift Firewall, and IDW PS 880 compliance via immutable `CDHDR`/`CDPOS` logs.
+* **🔴 HIGH (Class 3 - Autonomous Agent):** Warns against unpredictable OPEX, high CAPEX, and auditor compliance concerns regarding GoBD due to dynamic ReAct loops.
 
 ### 3.5 💡 Interactive Instant-Hover Tooltips
-
-Hovering over any question mark (`❓`) icon next to parameter titles instantly displays a dark glassmorphism help card explaining the parameter's business impact and consultant best practices.
-
----
+Hovering over any question mark (`❓`) icon instantly displays a dark help card explaining the parameter's business impact.
 
 ### 3.6 Slide 4: Board Governance Audit Certificate & Target Blueprint
-
-Slide 4 provides the official executive summary and certified target architecture blueprint for board approval.
-
-![Slide 4 Board Certificate](file:///home/peter/.gemini/antigravity/brain/614ba1d0-4656-4f4f-bfd9-3de50ec096d3/app_screenshot_slide4_certificate.png)
-
-#### 🎛️ UI Controls & Functions on Slide 4:
-1. **Audit Release Card (Top):** Official certification seal for the recommended architecture class.
-2. **Live Simulation Summary Cards (Middle):** Summarizes key metrics from Slide 3.
-3. **Target Architecture Blueprint Canvas:** Interactive 5-step process flow. Clicking any step reveals detailed system components, tasks, and governance checks.
-4. **Executive Statements (4 Text Blocks):** Comprehensive expert opinions on liability, financial ROI, Multi-LLM Hub protection, and EU AI Act compliance.
-5. **Button "Print / Export PDF" (Top Right):** Triggers browser print dialog for clean PDF export as a board presentation handout.
+Executive summary for board approval. Offers an audit release card, key live metrics, the target 5-step blueprint flow, and a PDF export button.
 
 ---
 
@@ -198,13 +140,70 @@ graph TD
 
 ## 🧮 5. Mathematical Engine & Stochastic Confidence Formulas
 
-The WAQAM engine calculates confidence $C$ and STP rate based on Bayesian probability:
+The WAQAM engine simulates straight-through processing, latency, and costs based on a **step-by-step serial stochastic model**. Rather than evaluating the process as a monolith, it simulates the pipeline step by step.
 
-$$C = Q \cdot (1 - 0.5 \cdot U)$$
+### 5.1 Step-Level Complexity Modeling (4D Model)
+Each process step $i$ in the document flow chain is evaluated across 4 dimensions:
+1.  **Information Density ($I_i \in [1, 5]$):** Extraction complexity of free texts and fields.
+2.  **Rules Complexity ($R_i \in [1, 5]$):** Depth and number of logical branches in this step.
+3.  **System Integration ($S_i \in [1, 5]$):** Number of connected systems and API calls (e.g. OData, RFC, REST).
+4.  **Cognitive Discretion ($C_i \in [1, 5]$):** Cognitive interpretation overhead for the AI or manual reviewer.
 
-Mass conservation across processing streams is strictly enforced:
+The sum of these dimensions determines the **Step Complexity Index (SCI)**:
+$$\text{SCI}_i = I_i + R_i + S_i + C_i \quad \in [4, 20]$$
 
-$$\text{Volume} = \text{AutoVolume} + \text{HitlVolume} + \text{ErrorVolume}$$
+### 5.2 Step-Level Confidence & Cognitive De-rating
+The baseline confidence of the initial extraction is defined by incoming Data Quality ($Q$) and Unstructured Ratio ($U$):
+$$\text{mean\_confidence\_base} = Q \cdot 0.70 + (1.0 - U) \cdot 0.30$$
+
+For each step $i$, this confidence is stochastically de-rated by the cognitive factor ($C_i$) and system integration depth ($S_i$):
+$$\text{Confidence Modifier}_i = 1.0 - (C_i - 1) \cdot 0.05 - (S_i - 1) \cdot 0.03$$
+$$\text{mean\_confidence\_step}_i = \text{mean\_confidence\_base} \cdot \text{Confidence Modifier}_i$$
+
+This determines the step-level AI failure rate:
+$$p_{\text{fail\_step}_i} = (1.0 - \text{mean\_confidence\_step}_i) \cdot 0.08$$
+
+### 5.3 Step-Level Implementation Types (`implType`)
+Each step features an implementation technology type that controls latency, token consumption, and error rates:
+
+#### A. Deterministic (`deterministic`)
+*   Pure code rules (e.g. ABAP check, standard SAP workflow).
+*   **Token Cost:** $0.00 \text{ €}$
+*   **Failure Probability:** Constant $0.01\%$ (near zero errors).
+*   **Latency:** < $0.5\text{s}$.
+
+#### B. Hybrid-AI (`ai`)
+*   Isolated AI extraction.
+*   **Token Cost:** Standard token usage based on unstructured input.
+*   **Failure Probability:** $p_{\text{fail\_step}_i}$.
+*   **Latency:** Standard AI execution duration.
+
+#### C. Autonomous Agent (`agentic`)
+*   ReAct loops for self-correction and validation.
+*   **Token Cost:** 1.8x multiplier on baseline token usage.
+*   **Failure Probability:** Significant error reduction through feedback loops:
+    *   If rules $N \ge 15$: $p_{\text{fail\_step}_i} \cdot 0.25$ (75% error reduction)
+    *   If rules $N < 15$: $p_{\text{fail\_step}_i} \cdot 0.75$ (25% error reduction)
+*   **Latency:** Extended execution time (+ $1.5\text{s}$ per step).
+
+### 5.4 Serial Processing Pass Rate (Conservation Law)
+The probability of a transaction passing the entire process automatically (STP) is the product of individual step success rates:
+$$P_{\text{auto\_pass}} = \prod_{i=1}^{S} (1 - p_{\text{fail\_step}_i})^{\text{checks\_step}_i}$$
+
+Where $\text{checks\_step}_i$ represents the weighted rule checks of step $i$ (divided into header and position rules).
+
+Transactions are stochastically distributed into:
+*   **Straight-Through Processing (STP):** $\text{Volume} \cdot P_{\text{auto\_pass}}$
+*   **Failure Rate (Residual Risk):** $\text{Volume} \cdot (1.0 - P_{\text{auto\_pass}}) \cdot \text{LeakageRate}$
+*   **HITL Routing (Fiori Inbox):** $\text{Volume} \cdot (1.0 - P_{\text{auto\_pass}}) \cdot (1.0 - \text{LeakageRate})$
+
+*Mass conservation is strictly maintained:*
+$$\text{Volume} \equiv \text{AutoVolume} + \text{HitlVolume} + \text{ErrorVolume}$$
+
+### 5.5 Economic Feasibility Volume Thresholds (V)
+The engine considers financial feasibility alongside technical fit. Low volume operations trigger automatic down-scaling:
+*   **$V < 2,000$ (Low Volume):** Downgrades recommendations for Class 2/3 to **Class 0 (No-AI)** (if unstructured ratio $U \le 35\%$) or **Class 1 (Point-AI)**.
+*   **$2,000 \le V < 6,000$ (Medium Volume):** Downgrades technical recommendations for Class 3 (Agentic) to **Class 2 (Hybrid-AI)** because the overhead of coordinating an agent does not yet amortize.
 
 ---
 
