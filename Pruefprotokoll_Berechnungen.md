@@ -6,10 +6,10 @@
 
 ---
 
-## ✅ Automatisierte Tests: 514/514 bestanden
+## ✅ Automatisierte Tests: 564/564 bestanden
 
-### Original-Testsuite (`npm test`) — 48/48 ✅
-* Verifiziert mathematische Invarianten, Bayes-Konfidenz, Null-Kosten-Garantien bei Klasse 0, extreme Ränder und die schrittweise SCI-Prozessrechnung.
+### Original-Testsuite (`npm test`) — 98/98 ✅
+* Verifiziert mathematische Invarianten, Bayes-Konfidenz, Null-Kosten-Garantien bei Klasse 0, extreme Ränder, die schrittweise SCI-Prozessrechnung sowie 50 umfassende Sweeps über das gesamte Parameter-Spektrum.
 
 ### Deep Audit ([deepAudit.ts](file:///home/peter/peters-brain/Projekte/waqamboard/src/utils/deepAudit.ts)) — 466/466 ✅
 * Kreuzvalidiert die Berechnungen der Engine gegen eine unabhängige, mathematische Nachberechnung für alle 18 Use Cases und verifiziert Monotonien sowie Plausibilitäten.
