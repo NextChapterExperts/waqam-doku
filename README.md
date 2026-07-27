@@ -1,6 +1,33 @@
+---
+id: eng:waqam-doku
+title: "WAQAM Board & Simulator — Dokumentations-Paket"
+kind: knowledge
+status: active
+priority: normal
+customer: "intern + Studierende"
+offering: offering:studenten-beratung
+summary: >
+  Fachliche, mathematische und technische Dokumentation des WAQAM-Simulators
+  und des SA2 Validation Gate (Berater-Handbuch, Prüfprotokolle, Roadmap).
+next_step: "Aktuell keine offenen Punkte"
+related_to: [eng:sap-consultant-package, eng:waqam-students, eng:waqamboard]
+tags: [sap, ai-governance, waqam, dokumentation]
+---
+
 # 📖 WAQAM Board & Simulator Dokumentations-Paket
 
 Dieses Repository enthält die vollständige fachliche, mathematische und technische Dokumentation des **WAQAM (Weighted Architecture Quality Assessment Model)** Simulators und des **SA2 Validation Gates**.
+
+Gehört zu [`../sap-consultant-package/`](../sap-consultant-package/) (Methodik SA2/PCS/Validation Gate) und [`../../studentenprojekt/`](../../studentenprojekt/) (Studenten-Übung).
+
+## Für wen?
+
+| Leser | Dokument |
+|-------|----------|
+| Berater / CFO | Berater-Handbuch DE/EN |
+| Architekten / Partner | Technische Architektur Validation Gate |
+| Audit / WP | Mathematisches Prüfprotokoll + Berechnungs-Nachweis |
+| Produkt | ROADMAP |
 
 ---
 

@@ -1,5 +1,7 @@
 # 🗺️ WAQAM Simulator & Engine Roadmap
 
+**Stand:** 2026-07-25 · **Engagement:** `eng:waqam-doku` · **Projekt-ROADMAP:** [`ROADMAP.md`](ROADMAP.md) (dieses Dokument)
+
 Diese Roadmap dokumentiert die geplanten funktionalen, mathematischen und vertrieblichen Weiterentwicklungen des **WAQAM (Weighted Architecture Quality Assessment Model)** Simulators. Sie dient als Leitfaden für die Produktentwicklung und das Beratungsteam.
 
 ---
